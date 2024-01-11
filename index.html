@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar In JAvascript</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="Dshbord.css">
+</head>
+<body>
+
+    <div class="sidebar">
+
+        <div class="top">
+            <div class="Logo">
+                <i class="bx bxs-grid-alt" style="color: #fff;"></i>
+                <span style="color: #fff; ">Company Name </span>
+                
+                 
+                    <i class="bx bx-menu" style="margin-top: -14px;" id="btn"></i>
+                 
+            </div>
+           
+        </div>
+        <div class="user">
+            <img src="sudhanshu.jpeg" alt="me" class="user-img">
+           
+            <div>
+                <p class="bold">Sudhanshu G Gaikwad </p>
+                <p><b>Admin</b></p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="navitem">Deshbord</span>
+                </a>
+                <span class="tooltip">Deshbord</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-shopping-bag"></i>
+                    <span class="navitem">Products</span>
+                </a>
+                <span class="tooltip">Products</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-list-check"></i>
+                    <span class="navitem">Categories</span>
+                </a>
+                <span class="tooltip">Categories</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-food-menu"></i>
+                    <span class="navitem">Orders</span>
+                </a>
+                <span class="tooltip">Orders</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-body"></i>
+                    <span class="navitem">Customers</span>
+                </a>
+                <span class="tooltip">Customers</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-location-plus"></i>
+                    <span class="navitem">Shipping</span>
+                </a>
+                <span class="tooltip">Shipping</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-cog"></i>
+                    <span class="navitem">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-log-out"></i>
+                    <span class="navitem">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+  
+
+        </ul>
+
+
+
+    </div>
+
+    <div class="main-content">
+        <div style="padding: 10px;">
+            
+                 
+            
+        </div>
+        <div class="container">
+        
+
+
+          
+            <div class="left1">
+                    <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  margin-top: 8px; font-size: 49px;"> <i class="bx bx-podcast"></i></h1>
+                    <!-- <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 8px;">1,00,000</h2>  -->
+            </div>
+            <div class="leftbox2">
+                <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  margin-top: 8px; font-size: 49px;"><i class="bx bx-book-content"></i></h1>
+                <!-- <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 8px;">5,000</h2>  -->
+            </div>
+
+      
+
+            <div class="leftbox3">
+                <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  margin-top: 8px; font-size: 49px;"><i class="bx bx-right-indent"></i></h1>
+                <!-- <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 8px;">2,000</h2>  -->
+            </div>
+             <div class="leftbox4">
+                <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  margin-top: 8px; font-size: 49px;"><i class="bx bx-detail"></i> </h1>
+                <!-- <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 8px;">1,000</h2>  -->
+            </div>
+            
+        </div>
+      
+       
+         
+            
+     
+    </div>
+
+  
+
+</body>
+
+<script>
+
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+    btn.onclick = function(){
+        sidebar.classList.toggle('active')
+    };
+</script>
+
+
+
+</html>
